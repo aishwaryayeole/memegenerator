@@ -1,0 +1,321 @@
+header {
+    top: 0px;
+    z-index: 1;
+    position: relative;
+    background: rgb(51, 51, 51);
+    padding-bottom: 8px;
+    height: 52px;
+}
+.sideBarHider{
+  display: none;
+}
+.header_css{
+  color: #fff;
+  padding-top: 8px;
+}
+.header_heading{
+  text-align: center;
+  font-size: 18px;
+}
+.header_links{
+  cursor: pointer;
+  color: #fff;
+}
+.header_links_padding{
+    padding-left: 20px;
+}
+// .header_links:hover{
+//   color: #fff;
+// }
+.header_links_position{
+  text-align: right;
+  padding-right: 28px;
+}
+.sap_img_div{
+ // margin-left: 20px;
+}
+
+.sapLogo {
+    background: url("../../../webapp/images/sap-logo.png") no-repeat scroll 15px 9px	#222;
+    //width: 13%;
+    height: 52px;
+    float: right;
+    margin-left: -125px;
+}
+.menuButton,.menuButton:hover,.menuButton:active, .menuButton:focus, .menuButton:visited{
+  background-color: #333333;
+  color: white;
+  height: 35px;
+  padding: 8px;
+}
+.glyphIcon{
+  font-size: 16px;
+}
+.app_name_login {
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    line-height: 52px;
+    text-align: center;
+    padding-left: 35%;
+    //width: 75%;
+}
+
+.right_nav_header {
+  color: #FFFFFF !important;
+  font-size: 14px !important;
+  margin-right: -100px;
+ }
+
+footer {
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 14.4px;
+    text-align: center;
+    background-color: #232323;
+    position: fixed;
+    display: block;
+}
+
+footer div span {
+    color: #bbbbbb;
+    font-size: 13px;
+}
+
+footer div {
+  padding-top: 8px;
+}
+
+.navbarButton {
+    background: #333333;
+    color: #cccc;
+    float: right;
+    border: 1px solid transparent;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.navBar {
+  font-size: 14px;
+  background: #CCCDCD;
+  height: 622px;
+}
+
+.list-group > .activeStyle {
+  color: white;
+  font: message-box;
+  font-size: 14px;
+  background-color: #2887DA !important;
+  border: 0px;
+}
+.list-group > .activeStyle:hover {
+  color: white;
+  font: message-box;
+  font-size: 14px;
+}
+
+.list-group-item {
+  border: 1px solid #ffff;
+  background-color: transparent !important;
+  font-size: 14px;
+  //margin-left: 15px;
+}
+.list-group-item span {
+  margin-right: 5px;
+  font-size: 14px;
+}
+.list-group > a {
+  //margin-left: 35px;
+  color: #333435;
+  font-size: 14px;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  color: #333 !important;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.buttonWrapper{
+  overflow: auto;
+}
+.contentColor{
+  background: #E5E6E8;
+}
+.tableBackground{
+  background-color: white;
+  font-size: 11px;
+}
+.primeColor{
+  color: #2887DA;
+}
+.toolbarComponent{
+  background: #333436;
+  color: white;
+  //margin-bottom: -6px;
+  font-size: 12px;
+  height: 35px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding-left: 0px;
+  line-height: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+.react-bs-table{
+  margin-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.searchBar{
+  margin-top: 5px;
+}
+.toolBarButton{
+  color: #EEEEEE;
+  height: 29px;
+  border: none;
+  background-color: #696A6B;
+  padding-left: 12px;
+  padding-right: 15px;
+  font-size: 12px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.toolBarButton:hover{
+  background: rgb(40, 135, 218) !important;
+  color: white !important;
+  border: none !important;
+}
+.react-bs-table-search-form > .form-control {
+  border: none;
+  height: 29px;
+  margin-top: -2px;
+  background: #696A6B;
+  color: white;
+}
+.react-bs-table-search-form > .form-control::placeholder {
+  color: white;
+}
+.addButtonGlyph {
+  color:white;
+}
+.activateButtonGlyph {
+  color:white;
+}
+.deactivateButtonGlyph {
+  color:white;
+}
+.deleteButtonGlyph {
+  color:white;
+}
+.searchButtonGlyph {
+  color:white;
+}
+.wrapText {
+  word-wrap: break-word;
+  white-space: normal;
+  padding: 0px 12px;
+}
+
+.header {
+  position: fixed;
+}
+.toolbarComponent{
+  // .btn.btn-default, .btn.btn-default:hover, .btn.btn-default:active, .btn.btn-default:focus, .btn.btn-default:visited {
+  //   background-color: #696A6B;
+  //   // border-color: white;
+  //   color: #EEEEEE;
+  //   border-radius: none !important;
+  // }
+}
+
+.btn.btn-info, .btn.btn-info:hover, .btn.btn-info:active, .btn.btn-info:focus, .btn.btn-info:visited {
+    background-color: #696A6B;
+    // border-color: white;
+    color: #EEEEEE;
+    border-radius: none !important;
+}
+
+.required-label:after {
+  content:"*";
+  color:red;
+}
+
+.searchForm{
+  line-height: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #DCDCDC;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.serachFormLabel{
+  font-size: 11px;
+  width: 11%;
+}
+.searchFormInput{
+  width: 22%;
+}
+.btn.btn-primary,.btn.btn-default{
+  font-size: 12px !important;
+}
+.backButton{
+  margin-right: 0px;
+}
+.form-control{
+  font-size: 11px !important;
+}
+.formLabel{
+  font-size: 11px;
+}
+.modalHeader{
+  font-size: 12px;
+  font-weight: bold;
+}
+.helpBlock{
+  font-size: 11px;
+}
+.gray-out-row{
+  background-color: #f2f2f2	;
+}
+.page-heading {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #333;
+}
+.capital {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+.f1 {
+  font-size: 30px;
+}
+.unauthorizedErrorContainer {
+	color : rgb(195, 58, 44) !important;
+}
+
+/* google fonts css */
+.material-icons {
+  color: rgb(40, 135, 218);
+  font-size: 18px;
+}
+.lockStatusImgStyle{
+  margin-bottom: -3px;
+  content:url('../../../webapp/images/lock_status.png');
+  height: 14px;
+  width: 14px;
+  pointer-events:none;
+}

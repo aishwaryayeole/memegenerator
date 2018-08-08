@@ -1,0 +1,4 @@
+export const GET_MEME_REQUEST = 'GET_MEME_REQUEST';
+export const GET_MEME_RESPONSE = 'GET_MEME_RESPONSE';
+
+
