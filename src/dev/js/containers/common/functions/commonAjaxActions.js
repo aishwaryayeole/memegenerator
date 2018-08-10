@@ -71,8 +71,9 @@ function axiosCall(dispatch, getState, request, ignoreUserObject) {
 					})
 				}).then((response) => {
 					if (response.status == 200) {
-						sessionStorage.setItem("token", "Bearer " + response.data.access_token);
-						sessionStorage.setItem("refresh_token", response.data.refresh_token);
+
+						// sessionStorage.setItem("token", "Bearer " + response.data.access_token);
+						// sessionStorage.setItem("refresh_token", response.data.refresh_token);
 						axiosCall(dispatch, getState, request, ignoreUserObject);
 						pendingHttpRequests.map((request) => {
 							axiosCall(dispatch, getState, request, ignoreUserObject);

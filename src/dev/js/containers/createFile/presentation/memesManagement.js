@@ -19,7 +19,7 @@ class memesManagement extends React.Component {
     }
 
     componentWillMount() {
-
+        this.props.getMemeRequest();
     }
 
     componentWillReceiveProps(nextProps) {
