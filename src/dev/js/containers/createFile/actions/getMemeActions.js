@@ -1,23 +1,27 @@
 import axios from 'axios';
 import * as config from '../../common/config';
 import * as types from '../../common/functions/commonActionTypes';
-import { httpRequest } from '../../common/functions/commonAjaxActions';
 
-export function getMemeRequest() {
-    return function (dispatch, getState) {
-        var request = {
-            url:config.getUrl('getMemes'),
-            method:'GET',
-        	successCallback:getMemeResponse,
-        	failureCallback:getMemeResponse
-        };
-        return httpRequest(dispatch, getState, request);
-    }
-}
-
-export function getMemeResponse(response) {
-    return {
+export function getMemeRequest() {  
+  return function(dispatch) {
+    // axios.get('https://api.imgflip.com/get_memes')
+    axios({
+      method: 'GET',
+      url: config.getUrl('getMemes'),
+      // params: request.params,
+      // data: requestData,
+      // headers: headers
+  
+    })
+    .then(response => {
+      console.log("response: ",response)
+      dispatch({
         type: types.GET_MEME_RESPONSE,
-        payload: response
-    }
+        payload: response.data
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+  }
 }

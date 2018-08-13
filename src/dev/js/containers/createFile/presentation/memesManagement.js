@@ -5,12 +5,10 @@ import { Form, FormGroup, InputGroup, HelpBlock, Col, Row, FormControl, ControlL
 import { BootstrapTable, TableHeaderColumn, InsertButton } from 'react-bootstrap-table';
 import * as table from '../../common/functions/customTable';
 // import profileStyle from './ProfileStyles.css';
-// import { handleActiveNav, getRolesListRequest, getBackupManagersListRequest, toggleNavBar } from 'common/functions/commonActions';
 import * as types from '../../common/functions/commonActionTypes';
 import { getMemeRequest } from '../actions/getMemeActions';
 
-
-class memesManagement extends React.Component {
+class MemesManagement extends React.Component {
     constructor(props, context) {
         super(props, context);
     }
@@ -23,7 +21,7 @@ class memesManagement extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-
+        console.log("this.props.getMemesData: ", this.props.getMemesData)
     }
 
     render() {
@@ -57,7 +55,7 @@ class memesManagement extends React.Component {
         dataAlign: 'center',
         width: '10%',
         type: 'icon',
-        handleIconClick: this.handleIconClick.bind(this),
+        // handleIconClick: this.handleIconClick.bind(this),
         iconTypes: [
           {
             iconType: 'eye-open',
@@ -96,16 +94,12 @@ class memesManagement extends React.Component {
                         <Row>
                             <Col sm={12} md={12} xs={12} className="tableBackground">
                                 <BootstrapTable ref="table" data={this.props.getMemesData || []}
-                                    search={true}
                                     headerStyle={{ color: '#2887DA' }}
-                                    pagination
                                 >
                                     {listCols}
                                 </BootstrapTable>
                             </Col>
-                        </Row>
-                      
-
+                        </Row>                     
                     </Grid>
                 </div>
             </div>
@@ -113,13 +107,13 @@ class memesManagement extends React.Component {
     }
 }
 
-memesManagement.contextTypes = {
+MemesManagement.contextTypes = {
     router: React.PropTypes.object.isRequired
 };
 
 function mapStateToProps(state) {
     return {
-        getMemesData: state.geteMeme.getMemesData
+        getMemesData: state.getMeme.getMemesData
 
     };
 }
@@ -131,4 +125,4 @@ function mapDispatchToProps(dispatch) {
     }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(memesManagement);
+export default connect(mapStateToProps, mapDispatchToProps)(MemesManagement);

@@ -20,18 +20,16 @@
 
 // export default App;
 
-
-
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 // import '../scss/index.css';
-import memesManagement from './dev/js/containers/createFile/presentation/memesManagement';
-import { Col, Row, Grid } from 'react-bootstrap';
+import MemesManagement from './dev/js/containers/createFile/presentation/MemesManagement';
+// import { Col, Row, Grid } from 'react-bootstrap';
 
 class App extends Component {
-  constructor(props,context) {
-    super(props,context);
+  constructor(props, context) {
+    super(props, context);
     this.state = {
     };
   }
@@ -40,9 +38,10 @@ class App extends Component {
 
     return (
       <div>
-          <div>
-            <memesManagement />
-          </div>  
+        <div>
+          <MemesManagement>
+          </MemesManagement>
+        </div>
       </div>
     );
   }
@@ -50,7 +49,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
- 
+
   };
 }
 

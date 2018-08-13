@@ -26,14 +26,14 @@ export default class IconComponent extends React.Component {
           onClick={this.onIconClick.bind(this)}
           key={index}
         >
-          {eachIcon.iconType == 'lock_status' &&
+          {eachIcon.iconType === 'lock_status' &&
             <i className='lockStatusImgStyle'></i>
           }
-          {eachIcon.iconFamily == 'Google' &&
+          {eachIcon.iconFamily === 'Google' &&
             <i className={eachIcon.iconType}>{eachIcon.iconName}</i>
           }
           {eachIcon.iconFamily != 'Google' &&
-            <Glyphicon glyph={eachIcon.iconType} title={eachIcon.iconTitle} style={eachIcon.iconType == 'eye-open' ? { color: 'rgb(40, 135, 218)' } : (this.props.role == "Administrator" && (eachIcon.iconType == 'pencil'||eachIcon.iconType=='lock_status')&&this.props.currentRow.emailId==sessionStorage.getItem("username")) || (eachIcon.iconType == 'remove-circle' && this.props.currentRow.level1ApprovalStatus != 'P' ) ||(eachIcon.iconType == 'pencil' && this.props.currentRow.activeStatus == "N")|| (eachIcon.iconType == 'trash' && this.props.currentRow.emailId == sessionStorage.getItem("username")) ? { color: 'rgba(0,0,0,0.4)' } : { color: 'rgb(40, 135, 218)' }} />
+            <Glyphicon glyph={eachIcon.iconType} title={eachIcon.iconTitle} style={eachIcon.iconType === 'eye-open' ? { color: 'rgb(40, 135, 218)' } : (this.props.role === "Administrator" && (eachIcon.iconType === 'pencil'||eachIcon.iconType==='lock_status')&&this.props.currentRow.emailId===sessionStorage.getItem("username")) || (eachIcon.iconType === 'remove-circle' && this.props.currentRow.level1ApprovalStatus != 'P' ) ||(eachIcon.iconType === 'pencil' && this.props.currentRow.activeStatus === "N")|| (eachIcon.iconType === 'trash' && this.props.currentRow.emailId === sessionStorage.getItem("username")) ? { color: 'rgba(0,0,0,0.4)' } : { color: 'rgb(40, 135, 218)' }} />
           }
         </Button>
       );

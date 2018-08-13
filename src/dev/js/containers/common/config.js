@@ -5,5 +5,5 @@ export function getUrl(APIName){
         'getMemes':'https://api.imgflip.com/get_memes'
        
     };
-    return getServerUrl() + APIUrls[APIName];
+    return APIUrls[APIName];
 }
