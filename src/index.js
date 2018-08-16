@@ -8,6 +8,8 @@ import thunkMiddleware from 'redux-thunk';
 import {compose, createStore, applyMiddleware } from 'redux';
 import allReducers from '../src/dev/js/containers/common/functions/allReducers';
 import AsyncComponentLoader from './AsyncComponentLoader';
+import style from 'bootstrap/dist/css/bootstrap.css';
+
 
 // import { hashHistory } from 'react-router';
 // import axios from 'axios';

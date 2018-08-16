@@ -23,6 +23,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Header from './dev/js/containers/common/components/Header/Header'
 // import '../scss/index.css';
 import MemesManagement from './dev/js/containers/createFile/presentation/MemesManagement';
 // import { Col, Row, Grid } from 'react-bootstrap';
@@ -39,8 +40,8 @@ class App extends Component {
     return (
       <div>
         <div>
-          <MemesManagement>
-          </MemesManagement>
+          <Header className="header" />
+          <MemesManagement />
         </div>
       </div>
     );

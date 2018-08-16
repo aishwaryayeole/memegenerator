@@ -15,7 +15,8 @@ header {
 }
 .header_heading{
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
+  color: white;
 }
 .header_links{
   cursor: pointer;
@@ -31,8 +32,9 @@ header {
   text-align: right;
   padding-right: 28px;
 }
-.sap_img_div{
- // margin-left: 20px;
+.icon_size{
+  height: 2px;
+  width: 5%;
 }
 
 .sapLogo {
