@@ -39,10 +39,8 @@ class App extends Component {
 
     return (
       <div>
-        <div>
           <Header className="header" />
           <MemesManagement />
-        </div>
       </div>
     );
   }

@@ -1,4 +1,3 @@
-// require('../scss/style.scss');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -9,6 +8,7 @@ import {compose, createStore, applyMiddleware } from 'redux';
 import allReducers from '../src/dev/js/containers/common/functions/allReducers';
 import AsyncComponentLoader from './AsyncComponentLoader';
 import style from 'bootstrap/dist/css/bootstrap.css';
+require('../src/dev/scss/style.scss');
 
 
 // import { hashHistory } from 'react-router';

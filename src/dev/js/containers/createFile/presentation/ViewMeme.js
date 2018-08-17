@@ -53,14 +53,14 @@ class ViewMeme extends React.Component {
        
 
         return (
-            <Modal show={this.props.viewRequest} onHide={this.close.bind(this)} bsSize="large">
+            <Modal show={this.props.viewImage} onHide={this.close.bind(this)} bsSize="large">
                 <Modal.Header closeButton>
                     <Modal.Title className="modalHeader">{this.state.modalHeading}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className={memeManagementStyle.modalScroll}>
                     <Grid fluid={true} className={memeManagementStyle.modal}>
                         <Row>
-                        <img src ={this.props.currentRow.url} />
+                        <img src ={this.props.currentRow.url} height="200" width="200"/>
                         </Row>
                     </Grid>
                 </Modal.Body>

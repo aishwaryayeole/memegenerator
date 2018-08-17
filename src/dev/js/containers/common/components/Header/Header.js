@@ -15,6 +15,7 @@ import {
     DropdownItem
 } from 'react-bootstrap';
 import { hashHistory } from 'react-router';
+import headerStyle from '../Header/HeaderStyles.css';
 
 var memeImg = require("../../../../../images/meme-icon.jpg");
 
@@ -53,66 +54,64 @@ class Header extends Component {
         //   sessionStorage.getItem("token") != "" ? true : false;
 
         const navInstance = (
-            //   <div>
-            //     <Grid fluid={true}>
-            //       <Row className='header_css'>
-            //         <Col xs={2} md={4} sm={4}>
-            //           <div className='sap_img_div'>
-            //             <Button className="menuButton" >
-            //               <Glyphicon glyph="menu-hamburger" className="glyphIcon" />
-            //             </Button>
-            //             <img style={{ marginLeft: '15px' }} src={memeImg} />
-            //           </div>
+              <div>
+                <Grid fluid={true}>
+                  <Row className={headerStyle.header_css}>
+                    <Col xs={2} md={4} sm={4}>
+                      <div className={headerStyle.sap_img_div}>
+                        <Button className="menuButton" >
+                          <Glyphicon glyph="menu-hamburger" className="glyphIcon" />
+                        </Button>
+                        <img style={{ marginLeft: '15px', marginTop: '5.5px' }} src={memeImg} height='42' width="42" />
+                      </div>
+                    </Col>
+
+                    <Col xs={10} md={4} sm={4} className={headerStyle.header_heading}>
+                      Meme Generator
+                  </Col>
+
+                    <Col xs={2} md={4} sm={4} className={headerStyle.header_links_position}>
+                      <span>
+                        Welcome !
+                      </span>
+                      <span className={headerStyle.header_links_padding}>
+                        <span className={headerStyle.header_links}>About</span>
+                    </span>
+
+                    </Col>
+
+                  </Row>
+                </Grid>
+                {/* <Row>
+                  <About about={this.state.about} close={this.close.bind(this)} />
+                </Row> */}
+              </div>
+
+     
+            // <Row>
+            //     <Navbar inverse collapseOnSelect>
+            //         <Col md={3}>
+            //             <Navbar.Brand>
+            //                 <img src={memeImg} height='10%' width="60"/>
+            //             </Navbar.Brand>
             //         </Col>
-
-            //         <Col xs={10} md={4} sm={4} className='header_heading'>
-            //           Meme Generator
-            //       </Col>
-
-            //         <Col xs={2} md={4} sm={4} className='header_links_position'>
-            //           <span>
-            //             Welcome !
-            //           </span>
-            //           <span className='header_links_padding'>
-            //             <span className='header_links' >About</span>
-            //         </span>
-
+            //         <Col md={9}>
+            //             <Navbar.Collapse>
+            //                 <Navbar.Header >
+            //                 </Navbar.Header>
+            //                 <Nav pullRight>
+            //                     <NavItem eventKey={1} href="#">
+            //                         About Page
+            //                 </NavItem>
+            //                 </Nav>
+            //             </Navbar.Collapse>
             //         </Col>
-
-            //       </Row>
-            //     </Grid>
-            //     {/* <Row>
-            //       <About about={this.state.about} close={this.close.bind(this)} />
-            //     </Row> */}
-            //   </div>
-
-            //     <Col xs={2} md={4} sm={4}>
-            //     <div className='sap_img_div'>
-            //         <Button className="menuButton" >
-            //             <Glyphicon glyph="menu-hamburger" className="glyphIcon" />
-            //         </Button>
-            //     </div> 
-            // </Col>
-
-            <Navbar inverse collapseOnSelect>
-                <Navbar.Header>
-
-                </Navbar.Header>
-                <Navbar.Form pullLeft>
-                    <img src={memeImg} height="50" width="50" />
-                </Navbar.Form>
-                <Navbar.Collapse>
-                    <Nav pullRight>
-                        <NavItem eventKey={1} href="#">
-                            About Page
-                    </NavItem>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            //     </Navbar>
+            // </Row>
         );
 
         return (
-            <header>
+            <header >
                 {navInstance}
             </header>
         );

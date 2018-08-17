@@ -6,7 +6,7 @@ import { BootstrapTable, TableHeaderColumn, InsertButton } from 'react-bootstrap
 import * as table from '../../common/functions/customTable';
 import * as types from '../../common/functions/commonActionTypes';
 import { getMemeRequest } from '../actions/getMemeActions';
-import  ViewMeme from './ViewMeme';
+import ViewMeme from './ViewMeme';
 
 
 class MemesManagement extends React.Component {
@@ -81,7 +81,7 @@ class MemesManagement extends React.Component {
                 handleIconClick: this.handleIconClick.bind(this),
                 iconTypes: [
                     {
-                        iconType: 'eye-open',
+                        iconType: 'pencil',
                         iconTitle: 'View'
                     }
                 ],
@@ -116,6 +116,7 @@ class MemesManagement extends React.Component {
                         <Row>
                             <Col sm={12} md={12} xs={12} className="tableBackground">
                                 <BootstrapTable ref="table" data={this.props.getMemesData || []}
+                                    search={true}
                                     headerStyle={{ color: '#2887DA' }}
                                     pagination
                                 >

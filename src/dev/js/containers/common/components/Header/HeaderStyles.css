@@ -1,0 +1,36 @@
+header {
+    top: 0px;
+    z-index: 1;
+    position: relative;
+    background: rgb(51, 51, 51);
+    padding-bottom: 8px;
+    height: 52px;
+}
+.sideBarHider{
+  display: none;
+}
+.header_css{
+  color: #fff;
+  padding-top: 8px;
+}
+.header_heading{
+  text-align: center;
+  font-size: 18px;
+}
+.header_links{
+  cursor: pointer;
+  color: #fff;
+}
+.header_links_padding{
+    padding-left: 20px;
+}
+
+.header_links_position{
+  text-align: right;
+  padding-right: 28px;
+}
+.icon_size{
+ margin-left: -200px;
+ margin-top:-800px;
+ margin-bottom: -200px;
+}
