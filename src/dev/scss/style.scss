@@ -37,13 +37,13 @@ header {
  margin-bottom: -200px;
 }
 
-.sapLogo {
-    background: url("../../../webapp/images/sap-logo.png") no-repeat scroll 15px 9px	#222;
-    //width: 13%;
-    height: 52px;
-    float: right;
-    margin-left: -125px;
-}
+// .sapLogo {
+//     background: url("../../webapp/images/sap-logo.png") no-repeat scroll 15px 9px	#222;
+//     //width: 13%;
+//     height: 52px;
+//     float: right;
+//     margin-left: -125px;
+// }
 .menuButton,.menuButton:hover,.menuButton:active, .menuButton:focus, .menuButton:visited{
   background-color: #333333;
   color: white;
@@ -314,10 +314,10 @@ footer div {
   color: rgb(40, 135, 218);
   font-size: 18px;
 }
-.lockStatusImgStyle{
-  margin-bottom: -3px;
-  content:url('../../../webapp/images/lock_status.png');
-  height: 14px;
-  width: 14px;
-  pointer-events:none;
-}
+// .lockStatusImgStyle{
+//   margin-bottom: -3px;
+//   content:url('../../../webapp/images/lock_status.png');
+//   height: 14px;
+//   width: 14px;
+//   pointer-events:none;
+// }

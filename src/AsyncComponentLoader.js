@@ -5,14 +5,11 @@ import { Router, Route, Link, browserHistory, IndexRoute, hashHistory } from 're
 import App from './App';
 
 
-const AsyncMemesGenerator = Loadable({
-    loader: () => import('./dev/js/containers/createFile/presentation/MemesManagement'),
-    loading: MyLoadingComponent,
-    timeout: 2000
-});
-
-
-
+// const AsyncMemesGenerator = Loadable({
+//     loader: () => import('./dev/js/containers/createFile/presentation/MemesManagement'),
+//     loading: MyLoadingComponent,
+//     timeout: 2000
+// });
 
 
 export default class AsyncComponentLoader extends Component {
@@ -34,11 +31,11 @@ export default class AsyncComponentLoader extends Component {
     render() {
         return (
             <div>
-                <App >
-                    <Router history={hashHistory}>
+                <App />
+                    {/* <Router history={hashHistory}>
                         <Route path="/" onEnter={this.viewHanlder.bind(this)} component={AsyncMemesGenerator} />
-                    </Router>
-                </App>
+                    </Router> */}
+                {/* </App> */}
             </div>)
     }
 }

@@ -56,26 +56,26 @@ class Header extends Component {
         const navInstance = (
               <div>
                 <Grid fluid={true}>
-                  <Row className={headerStyle.header_css}>
+                  <Row className="header_css">
                     <Col xs={2} md={4} sm={4}>
-                      <div className={headerStyle.sap_img_div}>
+                      <div className="sap_img_div">
                         <Button className="menuButton" >
                           <Glyphicon glyph="menu-hamburger" className="glyphIcon" />
                         </Button>
-                        <img style={{ marginLeft: '15px', marginTop: '5.5px' }} src={memeImg} height='42' width="42" />
+                        <img style={{ marginLeft: '15px', marginTop: '1px' }} src={memeImg} height='42' width="42" />
                       </div>
                     </Col>
 
-                    <Col xs={10} md={4} sm={4} className={headerStyle.header_heading}>
+                    <Col xs={10} md={4} sm={4} className="header_heading">
                       Meme Generator
                   </Col>
 
-                    <Col xs={2} md={4} sm={4} className={headerStyle.header_links_position}>
+                    <Col xs={2} md={4} sm={4} className="header_links_position">
                       <span>
-                        Welcome !
+                        Welcome User
                       </span>
-                      <span className={headerStyle.header_links_padding}>
-                        <span className={headerStyle.header_links}>About</span>
+                      <span className="header_links_padding">
+                        <span className="header_links">About</span>
                     </span>
 
                     </Col>

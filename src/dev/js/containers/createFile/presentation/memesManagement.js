@@ -7,6 +7,8 @@ import * as table from '../../common/functions/customTable';
 import * as types from '../../common/functions/commonActionTypes';
 import { getMemeRequest } from '../actions/getMemeActions';
 import ViewMeme from './ViewMeme';
+import memeManagementStyle from './MemeManagementStyles.css';
+
 
 
 class MemesManagement extends React.Component {
@@ -47,6 +49,21 @@ class MemesManagement extends React.Component {
         this.setState({ currentRow: {} });
     }
 
+    createCustomToolBar = props => {
+        return (
+          <div>
+            <div className={memeManagementStyle.toolbarComponent}>
+              <Col xs={4} sm={4} md={4}>
+                Memes
+              </Col>
+              {/*<Col xs={3} sm={3} md={3} className="searchBar">
+                {props.components.searchPanel}
+              </Col>*/}
+            </div>
+          </div>
+        );
+      }
+
     render() {
 
 
@@ -58,6 +75,12 @@ class MemesManagement extends React.Component {
         //         </FormGroup>
         //     );
         // }
+
+        const options = {
+            toolBar: this.createCustomToolBar,
+            defaultSortName: 'name',
+            defaultSortOrder: 'asc'
+          }
 
         const fields =
             [{
@@ -118,6 +141,7 @@ class MemesManagement extends React.Component {
                                 <BootstrapTable ref="table" data={this.props.getMemesData || []}
                                     search={true}
                                     headerStyle={{ color: '#2887DA' }}
+                                    options={options}
                                     pagination
                                 >
                                     {listCols}

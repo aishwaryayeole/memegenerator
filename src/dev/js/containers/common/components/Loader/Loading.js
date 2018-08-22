@@ -2,7 +2,7 @@
 import NProgress from 'react-nprogress/nprogress.js';
 
 export default function MyLoadingComponent(props) {
-  if(!document.getElementById('nprogress') && document.getElementById('root').childElementCount === 0){
+  if(!document.getElementById('nprogress') && document.getElementById('content').childElementCount === 0){
     NProgress.start();
   }
   else{
