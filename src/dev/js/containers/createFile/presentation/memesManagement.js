@@ -53,12 +53,12 @@ class MemesManagement extends React.Component {
         return (
           <div>
             <div className={memeManagementStyle.toolbarComponent}>
-              <Col xs={4} sm={4} md={4}>
+              <Col xs={8} sm={8} md={8}>
                 Memes
               </Col>
-              {/*<Col xs={3} sm={3} md={3} className="searchBar">
+              <Col xs={4} sm={4} md={4} className="searchBar">
                 {props.components.searchPanel}
-              </Col>*/}
+              </Col>
             </div>
           </div>
         );
@@ -96,7 +96,7 @@ class MemesManagement extends React.Component {
                 width: '15%'
             },
             {
-                name: 'Actions',
+                name: 'Edit',
                 dataField: 'actions',
                 dataAlign: 'center',
                 width: '10%',
