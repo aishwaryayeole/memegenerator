@@ -74,9 +74,11 @@ class ViewMeme extends React.Component {
         <Modal.Body className={memeManagementStyle.modalScroll}>
           <Grid fluid={true} className={memeManagementStyle.modal}>
             <Row className="show-grid">
+            <FormGroup>
               <img src={this.props.currentRow.url} height="400" width="400" />
+              </FormGroup>
             </Row>
-            <Row className="show-grid top-buffer">
+            <Row className="show-grid">
               <Col componentClass={ControlLabel} md={2}>
                 Text 1
               </Col>
