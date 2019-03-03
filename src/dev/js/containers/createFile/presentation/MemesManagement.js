@@ -10,7 +10,6 @@ import ViewMeme from './ViewMeme';
 import memeManagementStyle from './MemeManagementStyles.css';
 
 
-
 class MemesManagement extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -22,8 +21,7 @@ class MemesManagement extends React.Component {
 
     }
 
-    componentDidMount() {
-    }
+ 
 
     componentWillMount() {
         this.props.getMemeRequest();
