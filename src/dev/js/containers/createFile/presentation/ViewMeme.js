@@ -28,7 +28,7 @@ class ViewMeme extends React.Component {
     super(props, context);
 
     this.state = {
-      modalHeading: "Meme",
+      modalHeading: "My Meme",
       createData: {
         id: "",
         text0: "",

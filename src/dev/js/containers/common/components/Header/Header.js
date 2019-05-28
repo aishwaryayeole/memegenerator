@@ -67,7 +67,7 @@ class Header extends Component {
                     </Col>
 
                     <Col xs={10} md={4} sm={4} className="header_heading">
-                      Meme Generator
+                      Memes Generator
                   </Col>
 
                     <Col xs={2} md={4} sm={4} className="header_links_position">
