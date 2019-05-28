@@ -54,3 +54,9 @@ export function createMemeRequest(createData) {
       });
   };
 }
+
+export function resetTarget() {
+  return {
+    type: types.DEFAULT
+  };
+}

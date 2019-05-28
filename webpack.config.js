@@ -71,7 +71,7 @@ module.exports = {
   devServer: {
     inline: true,
     contentBase: './webapp',
-    port: 3000
+    port: 5000
   },
   resolve: {
     extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx', '.json'],
